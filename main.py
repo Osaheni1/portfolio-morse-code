@@ -16,7 +16,7 @@ class MorseMessage(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     message = db.Column(db.Text, nullable=False)
 
-# db.create_all()
+db.create_all()
 
 
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
