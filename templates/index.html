@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/5.1/examples/checkout/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Checkout example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../static/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+
+<link rel="manifest" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+
+<meta name="theme-color" content="#7952b3">
+    <link rel="icon" href="../static/favico.ico">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../static/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light" data-new-gr-c-s-check-loaded="14.1047.0" data-gr-ext-installed="">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+
+      <h2>Write an Anonymous Message to Joshua</h2>
+      <p class="lead">Hello friends, welcome to my Morse-code (text-based) web application. This is how the app works; you will write me an anonymous message which will be encoded using Morse-Code text-based communication method, neither I or anyone else will know the sender.</p>
+      <p class="lead"> Lets just imagine there is a cyber spy on net, and you are to write me an encrypted message.</p>
+        <p class="lead">So this is the time to let it all out, that thing you've been trying to tell me 😊 or that secret of yours you've been hidding 😉, and you always wanted me to know, now is the time.
+     </p>
+        <p class="lead"> So guys lets make this fun!</p>
+    </div>
+
+    <div class="row g-5">
+
+      <div class="col-md-7 col-lg-8">
+
+        <form class="needs-validation" novalidate="" action="save_ano" method="POST">
+
+
+
+            <div class="col-12">
+              <label for="address" class="form-label">What would you like to say to Joshy 😉</label>
+              <input type="text" class="form-control" name="message" id="address" required="">
+
+            </div>
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Click To Submit</button>
+        </form>
+
+          <hr class="my-4">
+        <p>Your encrypted message will be displayed below 👇</p>
+
+           <div class="col-lg-12 comment">
+        {%for message in res:%}
+              <ul class="commentList">
+
+                <li>
+
+                    <div class="commentText">
+                      <p>{{message}}</p>
+                      <span class="date sub-text"><i>anonymous</i></span>
+                    </div>
+                </li>
+
+              </ul>
+        {%endfor%}
+            </div>
+
+          <hr class="my-4">
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </main>
+
+
+</div>
+
+
+    <script src="../static/bootstrap.bundle.min.js.download" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="../static/form-validation.js.download"></script>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
