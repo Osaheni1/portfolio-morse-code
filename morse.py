@@ -15,8 +15,9 @@ def call(mess):
 
     for u in user:
 
-        if morse_code[u]:
-            message.append(morse_code[u])
+        for i in morse_code:
+            if i == u:
+                message.append(morse_code[u])
 
     return message
 
